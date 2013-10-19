@@ -1,11 +1,11 @@
 package top
 
-import org.scalatest.FlatSpec
+import org.scalatest.{MustMatchers, FlatSpec}
 import rx.lang.scala.Observable
 import scala.concurrent._
 import ExecutionContext.Implicits.global
 
-class TopSpec extends FlatSpec {
+class TopSpec extends FlatSpec with MustMatchers {
 
   it should "do" in {
 
