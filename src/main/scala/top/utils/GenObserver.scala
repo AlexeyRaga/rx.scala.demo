@@ -1,3 +1,4 @@
+package top
 package utils
 
 import rx.Observer
@@ -13,6 +14,7 @@ class GenObserver(prefix: String) extends Observer[String] {
   }
 
   def onError(e: Throwable) {
+    e.printStackTrace()
     println(s"error with::: $counter")
   }
 
