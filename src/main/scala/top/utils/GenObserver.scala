@@ -10,7 +10,6 @@ class GenObserver(prefix: String) extends Observer[String] {
   def onNext(args: String) {
     counter += 1
     println(s"$prefix ==> $args")
-    Thread.sleep(1000)
   }
 
   def onError(e: Throwable) {
